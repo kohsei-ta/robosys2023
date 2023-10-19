@@ -1,2 +1,5 @@
 # robosys2023
-Adding numbers from standard input
+ロボットシステム2023
+
+* このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます.
+* © 2023 Kohsei Takaoka

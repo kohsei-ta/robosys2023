@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# SpDX-FileCopyrightText: 2023 Kohsei Takaoka ta.kousei0226@gmail.com
 import sys
 
 ans = 0

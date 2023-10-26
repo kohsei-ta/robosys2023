@@ -5,7 +5,7 @@
 
 ## インストール方法
 
-$ git clone git@github.com:kohsei-ta/robosys2023.git 
+$ git clone https://github.com/kohsei-ta/robosys2023.git 
 
 # ライセンス
 

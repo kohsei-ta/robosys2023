@@ -1,3 +1,3 @@
 #!/bin/bash
 
-seq 5 | ./plus
+out=$(seq 5 | ./plus)

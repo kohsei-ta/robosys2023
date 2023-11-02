@@ -11,9 +11,17 @@ $ git clone https://github.com/kohsei-ta/robosys2023.git
 ![test](https://github.com/kohsei-ta/robosys2023/actions/workflows/test.yml/badge.svg)
  * 機能
 
+標準入力から読み込んだ数字を足す。
+
  * 実行方法
+,,,
+$ seq 15 | ./plus
+,,,
 
  * 実行結果
+,,,
+120
+,,,
 
 ## 必要なソフトウェア
 * Pyton

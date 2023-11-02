@@ -1,5 +1,6 @@
 # robosys2023
 ![test](https://github.com/kohsei-ta/robosys2023/actions/workflows/test.yml/badge.svg)
+
 ロボットシステム2023の練習レポジトリ
 * このパッケージのコードは，下記のスライド（CC-BY-SA 4.0 by RyuichiUeda)のものを，本人の許可を得て自身の著作としたものです.
 	* [ryuichiueda/my_slides robosys_2022](https://github.com/ryuichiueda/my_slides/tree/master/robosys_2022)
@@ -10,13 +11,12 @@ $ git clone https://github.com/kohsei-ta/robosys2023.git
 ```
 
 ## plus	コマンド
-* 機能
 
-  標準入力から読み込んだ数字を足す。
+標準入力から読み込んだ数字を足す。
 
-* 実行方法
+* 使用方法
 ```
-$ seq 自然数 | ./plus
+$ seq 数字 | ./plus
 ```
 
 * 実行結果
@@ -26,6 +26,14 @@ $ seq 15 | ./plus
 ```
 120
 ``` 
+```
+$ seq あ | ./plus
+```
+```
+seq: invalid floating point argument: ‘あ’
+Try 'seq --help' for more information.
+0
+```
 
 ## 必要なソフトウェア
 * Pyton

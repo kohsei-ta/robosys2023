@@ -9,19 +9,21 @@ $ git clone https://github.com/kohsei-ta/robosys2023.git
 
 ## plus	コマンド
 ![test](https://github.com/kohsei-ta/robosys2023/actions/workflows/test.yml/badge.svg)
- * 機能
+* 機能
 
-標準入力から読み込んだ数字を足す。
+  標準入力から読み込んだ数字を足す。
 
- * 実行方法
-,,,
+* 実行方法
+、、、
+$ seq 自然数 | ./plus
+、、、
+
+* 実行結果
+、、、
 $ seq 15 | ./plus
-,,,
 
- * 実行結果
-,,,
 120
-,,,
+、、、
 
 ## 必要なソフトウェア
 * Pyton

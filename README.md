@@ -8,7 +8,7 @@
 $ git clone https://github.com/kohsei-ta/robosys2023.git 
 
 ## plus	コマンド
-![test](https://github.com/kohsei-ta/robosys2023/.github/workflows/test.yml/badge.svg)
+![test](https://github.com/kohsei-ta/robosys2023/actions/workflows/test.yml/badge.svg)
  * 機能
 
  * 実行方法

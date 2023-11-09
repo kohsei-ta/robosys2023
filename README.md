@@ -1,4 +1,4 @@
-# robosys2023
+#robosys2023
 ![test](https://github.com/kohsei-ta/robosys2023/actions/workflows/test.yml/badge.svg)
 
 ロボットシステム2023の練習レポジトリ
@@ -25,14 +25,6 @@ $ seq 15 | ./plus
 ```
 ```
 120
-``` 
-```
-$ seq あ | ./plus
-```
-```
-seq: invalid floating point argument: ‘あ’
-Try 'seq --help' for more information.
-0
 ```
 
 ## 必要なソフトウェア

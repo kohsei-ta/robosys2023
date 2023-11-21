@@ -4,14 +4,20 @@
 
 import sys
 
-ans = 0
+ans1 = 0
+ans2 = 0
 for line in sys.stdin:
     try:
         num = int(line)
-        ans += num
+        ans1 += num
+        ans2 -= num
     except:
         num = float(line)
-        ans += num
+        ans1 += num
+        ans2 -= num
 
-lst = list(range(1, num + 1))
-print(lst, "=", ans)
+lst1 = list(range(1, num + 1))
+print(lst1, "=", ans1)
+
+lst2 = list(range(-num, num - num))
+print(lst2, "=", ans2)

@@ -11,7 +11,7 @@ res=0
 
 ### I/O TEST ###
 out=$(seq 5 | ./plus)
-[ "${out}" [1, 2, 3, 4, 5]= 15 ] || ng ${LINENO}
+[ "${out}" = [1, 2, 3, 4, 5] = 15 [-5, -4, -3, -2, -1] = -15] || ng ${LINENO}
 
 ### STRANGE INPUT ###
 out=$(echo あ | ./plus)
@@ -19,22 +19,6 @@ out=$(echo あ | ./plus)
 [ "${out}" = "" ] || ng ${LINENO}
 
 out=$(echo  | ./plus)
-[ "$?" = 1 ]      || ng ${LINENO}
-[ "${out}" = "" ] || ng ${LINENO}
-
-[ "$res" = 0 ] && echo OK
-exit $res
-
-### I/O TEST ###
-out=$(seq 5 | ./minus)
-[ "${out}" [-5, -4, -3, -2, -1] = -13 ] || ng ${LINENO}
-
-### STRANGE INPUT ###
-out=$(echo あ | ./minus)
-[ "$?" = 1 ]      || ng ${LINENO}
-[ "${out}" = "" ] || ng ${LINENO}
-
-out=$(echo  | ./minus)
 [ "$?" = 1 ]      || ng ${LINENO}
 [ "${out}" = "" ] || ng ${LINENO}
 

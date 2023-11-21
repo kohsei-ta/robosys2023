@@ -24,3 +24,19 @@ out=$(echo  | ./plus)
 
 [ "$res" = 0 ] && echo OK
 exit $res
+
+### I/O TEST ###
+out=$(seq 5 | ./minus)
+[ "${out}" = -13 ] || ng ${LINENO}
+
+### STRANGE INPUT ###
+out=$(echo あ | ./minus)
+[ "$?" = 1 ]      || ng ${LINENO}
+[ "${out}" = "" ] || ng ${LINENO}
+
+out=$(echo  | ./minus)
+[ "$?" = 1 ]      || ng ${LINENO}
+[ "${out}" = "" ] || ng ${LINENO}
+
+[ "$res" = 0 ] && echo OK
+exit $res

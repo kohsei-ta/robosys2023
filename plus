@@ -14,5 +14,4 @@ for line in sys.stdin:
         ans += num
 
 lst = list(range(1, num + 1))
-print(lst)
-print("=", ans)
+print(lst, "=", ans)

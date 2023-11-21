@@ -7,8 +7,12 @@ import sys
 ans = 0
 for line in sys.stdin:
     try:
-        ans += int(line)
+        num = int(line)
+        ans += num
     except:
-        ans += float(line)
+        num = float(line)
+        ans += num
 
-print(ans) 
+lst = list(range(1, num + 1))
+print(lst)
+print("=", ans)

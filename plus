@@ -6,18 +6,24 @@ import sys
 
 ans1 = 0
 ans2 = 0
+ans3 = 1
 for line in sys.stdin:
     try:
         num = int(line)
         ans1 += num
         ans2 -= num
+        ans3 *= num
     except:
         num = float(line)
         ans1 += num
         ans2 -= num
+        ans3 *= num
 
 lst1 = list(range(1, num + 1))
 print(lst1, "=", ans1)
 
 lst2 = list(range(-num, num - num))
 print(lst2, "=", ans2)
+
+lst3 = list(range(1, num + 1))
+print(lst3, "=", ans3)

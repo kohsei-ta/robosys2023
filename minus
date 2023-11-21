@@ -12,8 +12,6 @@ for line in sys.stdin:
     except:
         num = float(line)
         ans -= num
-
-ans = ans + 2
-lst = list(range(1, num + 1))
-print(lst)
-print("=", ans)
+ 
+lst = list(range(-num, num - num))
+print(lst, "=", ans)

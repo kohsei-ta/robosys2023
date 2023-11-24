@@ -1,11 +1,36 @@
 #!/usr/bin/python3
-import sys
+# SpDX-FileCopyrightText: 2023 Kohsei Takaoka ta.kousei0226@gmail.com
+# SPDX-License-Identifier:BSD-3-Clause
 
-ans = 0
+import sys
+import keyboard
+
+ans1 = 0
+ans2 = 0
+ans3 = 1
+ans4 = 1
 for line in sys.stdin:
     try:
-        ans += int(line)
+        num = int(line)
+        ans1 += num
+        ans2 -= num
+        ans3 *= num
+        ans4 /= num
     except:
-        ans += float(line)
+        num = float(line)
+        ans1 += num
+        ans2 -= num
+        ans3 *= num
+        ans4 /= num
 
-print(ans) 
+lst1 = list(range(1, num + 1))
+print(lst1, "=", ans1)
+
+lst2 = list(range(-num, num - num))
+print(lst2, "=", ans2)
+
+lst3 = list(range(1, num + 1))
+print(lst3, "=", ans3)
+
+lst4 = list(range(1, num + 1))
+print(lst4, "=", f'{ans4:.06f}')

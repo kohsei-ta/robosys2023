@@ -1,0 +1,67 @@
+#!/usr/bin/python3
+# SpDX-FileCopyrightText: 2023 Kohsei Takaoka ta.kousei0226@gmail.com
+# SPDX-License-Identifier:BSD-3-Clause
+
+import sys
+
+ans1 = 0
+ans2 = 0
+ans3 = 1
+ans4 = 1
+
+while True:
+    print("1:addition 2:subtraction 3:multiplication 4:division")
+    input_data = int(input("the way to calculate:\n"))
+
+    if input_data == 1:
+        for line in sys.stdin:
+            try:
+                num = int(line)
+                ans1 += num
+            except:
+                num = float(line)
+                ans1 += num
+            lst1 = list(range(1, num + 1))
+            print(lst1, "=", ans1)
+        break
+
+    elif input_data == 2:
+        for line in sys.stdin:
+            try:
+                num = int(line)
+                ans2 -= num
+            except:
+                num = float(line)
+                ans2 -= num
+
+            lst2 = list(range(-num, num - num))
+            print(lst2, "=", ans2)
+        break
+
+    elif input_data == 3:
+        for line in sys.stdin:
+            try:
+                num = int(line)
+                ans3 *= num
+            except:
+                num = float(line)
+                ans3 *= num
+
+            lst3 = list(range(1, num + 1))
+            print(lst3, "=", ans3)
+        break
+
+    elif input_data == 4:
+        for line in sys.stdin:
+            try:
+                num = int(line)
+                ans4 /= num
+            except:
+                num = float(line)
+                ans4 /= num
+
+            lst4 = list(range(1, num + 1))
+            print(lst4, "=", ans4)
+        break
+    else:
+        print("error:Enter a number between 1 and 4.\nPlease try again.\n")

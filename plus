@@ -25,7 +25,7 @@ for line in sys.stdin:
 lst1 = list(range(1, num + 1))
 print(lst1, "=", ans1)
 
-lst2 = list(range(-1, num - num))
+lst2 = list(range(-1, -num - 1, -1))
 print(lst2, "=", ans2)
 
 lst3 = list(range(1, num + 1))

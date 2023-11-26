@@ -3,7 +3,10 @@
 # SPDX-License-Identifier:BSD-3-Clause
 
 import sys
+<<<<<<< HEAD
 import keyboard
+=======
+>>>>>>> dev
 
 ans1 = 0
 ans2 = 0
@@ -33,4 +36,4 @@ lst3 = list(range(1, num + 1))
 print(lst3, "=", ans3)
 
 lst4 = list(range(1, num + 1))
-print(lst4, "=", f'{ans4:.06f}')
+print(lst4, "=", f'{ans4:.10f}')

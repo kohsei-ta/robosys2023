@@ -12,11 +12,7 @@ $ git clone https://github.com/kohsei-ta/robosys2023.git
 
 ## plus	コマンド
 
-<<<<<<< HEAD
-標準入力から読み込んだ数字を足す。
-=======
 標準入力から読み込んだ数字を1から順番に加減乗除の計算をする。
->>>>>>> dev
 
 * 使用方法
 ```

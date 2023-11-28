@@ -5,8 +5,6 @@
 ng () {
 	echo NG at LINE $1
 	res1
-        echo NG at LINE $1
-        res1
 }
 
 res=0

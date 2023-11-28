@@ -5,11 +5,13 @@
 ロボットシステム2023の練習レポジトリ
 
 ## インストール方法
+
+* インストール方法
 ```
 $ git clone https://github.com/kohsei-ta/robosys2023.git 
 ```
 
-## 実行権限の付与
+* 実行権限の付与
 ```
 $ chmod +x plus
 ```

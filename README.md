@@ -10,6 +10,10 @@
 ```
 $ git clone https://github.com/kohsei-ta/robosys2023.git 
 ```
+* 実行権限の付与
+```
+$ chmod +x plus
+```
 
 ## plus	コマンド
 

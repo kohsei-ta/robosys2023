@@ -14,8 +14,6 @@ $ git clone https://github.com/kohsei-ta/robosys2023.git
 * インスト―ルの確認
 ```
 $ cd robosys2023
-```
-```
 $ ls
 ```
 ```

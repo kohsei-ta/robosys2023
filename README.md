@@ -15,9 +15,6 @@ $ git clone https://github.com/kohsei-ta/robosys2023.git
 ```
 $ ls
 ```
-
-以下のようになればインストール完了
-
 ```
 LICENSE  README.md  plus  test.bash  yamada.bash
 ```

@@ -20,13 +20,37 @@ $ ls
 LICENSE  README.md  plus  test.bash  yamada.bash
 ```
 
+# 実行権限の確認と付与
+
+* 実行権限の確認
+```
+$ la -la
+```
+```
+total 36
+(略)
+-rwxr-xr--  1 takaoka takaoka  667 Nov 28 15:31 plus
+-rwxr-xr--  1 takaoka takaoka  585 Nov 29 02:29 test.bash
+```
+`-rwxr-xr--`となっているため、このままでは実行できない.
+
 * 実行権限の付与
 ```
 $ chmod +x plus
-```
-```
 $ chmod +x test.bash
 ```
+
+もう一度実行権限の確認する.
+```
+$ ls -la
+```
+```
+total 32
+(略)
+-rwxr-xr-x  1 takaoka takaoka  667 Mon Nov 15:31 plus
+-rwxr-xr-x  1 takaoka takaoka  585 Mon Nov 02:29 test.bash
+```
+`-rwxr-xr--`となったため、実行できるようになった.
 
 ## plus	コマンド
 

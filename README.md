@@ -24,6 +24,9 @@ LICENSE  README.md  plus  test.bash  yamada.bash
 ```
 $ chmod +x plus
 ```
+```
+$ chmod +x test.bash
+```
 
 ## plus	コマンド
 
@@ -43,6 +46,10 @@ $ seq 5 | ./plus
 [-1, -2, -3, -4, -5] = -15
 [1, 2, 3, 4, 5] = 120
 [1, 2, 3, 4, 5] = 0.0083333333
+```
+## テスト方法
+```
+$ ./test.bash
 ```
 
 # 必要なソフトウェア

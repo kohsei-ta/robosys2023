@@ -52,7 +52,8 @@ $ seq 5 | ./plus
 $ ./test.bash
 ```
 
-<details><summary>`./test.bash`の結果</summary><div>
+* `./test.bash`の結果
+<details><summary>結果</summary><div>
 
 ```
 (略)

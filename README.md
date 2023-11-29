@@ -47,13 +47,15 @@ $ seq 5 | ./plus
 [1, 2, 3, 4, 5] = 120
 [1, 2, 3, 4, 5] = 0.0083333333
 ```
-## テスト方法
+
+## 動作確認
+* 実行方法
 ```
 $ ./test.bash
 ```
 
-* `./test.bash`の結果
-<details><summary>結果</summary><div>
+* 実行結果
+<details><summary>出力</summary><div>
 
 ```
 (略)
@@ -113,6 +115,12 @@ exit $res
 + exit 0
 ```
 </div></details>
+
+* 終了ステータスの確認
+```
+$ echo $?
+
+```
 
 # 必要なソフトウェア
 * Pyton

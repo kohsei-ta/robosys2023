@@ -32,7 +32,7 @@ total 36
 -rwxr-xr--  1 takaoka takaoka  667 Nov 28 15:31 plus
 -rwxr-xr--  1 takaoka takaoka  585 Nov 29 02:29 test.bash
 ```
-`-rwxr-xr-x`となっているため、このままでは実行できない.
+`-rwxr-xr--`となっているため、このままでは実行できない.
 
 * 実行権限の付与
 ```
@@ -50,7 +50,7 @@ total 32
 -rwxr-xr-x  1 takaoka takaoka  667 Mon Nov 15:31 plus
 -rwxr-xr-x  1 takaoka takaoka  585 Mon Nov 02:29 test.bash
 ```
-`-rwxr-xr--`となったため、実行できるようになった.
+`-rwxr-xr-x`となったため、実行できるようになった.
 
 ## plus	コマンド
 

@@ -51,6 +51,66 @@ $ seq 5 | ./plus
 ```
 $ ./test.bash
 ```
+<details><summary>`./test.bash`の結果</summary><div>
+
+```
+(略)
+res=0
++ res=0
+
+### I/O TEST ###
+out=$(seq 5 | ./plus)
+++ seq 5
+++ ./plus
++ out='[1, 2, 3, 4, 5] = 15
+[-1, -2, -3, -4, -5] = -15
+[1, 2, 3, 4, 5] = 120
+[1, 2, 3, 4, 5] = 0.0083333333'
+[ "${out}" = "[1, 2, 3, 4, 5] = 15
+[-1, -2, -3, -4, -5] = -15
+[1, 2, 3, 4, 5] = 120
+[1, 2, 3, 4, 5] = 0.0083333333" ] || ng ${LINENO}
++ '[' '[1, 2, 3, 4, 5] = 15
+[-1, -2, -3, -4, -5] = -15
+[1, 2, 3, 4, 5] = 120
+[1, 2, 3, 4, 5] = 0.0083333333' = '[1, 2, 3, 4, 5] = 15
+[-1, -2, -3, -4, -5] = -15
+[1, 2, 3, 4, 5] = 120
+[1, 2, 3, 4, 5] = 0.0083333333' ']'
+
+### STRANGE INPUT ###
+out=$(echo あ | ./plus)
+++ echo あ
+++ ./plus
+Traceback (most recent call last):
+(略)
+ValueError: could not convert string to float: 'あ\n'
++ out=
+[ "$?" = 1 ]      || ng ${LINENO}
++ '[' 1 = 1 ']'
+[ "${out}" = "" ] || ng ${LINENO}
++ '[' '' = '' ']'
+
+out=$(echo | ./plus)
+++ echo
+++ ./plus
+Traceback (most recent call last):
+ (略)
+ValueError: could not convert string to float: '\n'
++ out=
+[ "$?" = 1 ]      || ng ${LINENO}
++ '[' 1 = 1 ']'
+[ "${out}" = "" ] || ng ${LINENO}
++ '[' '' = '' ']'
+
+[ "$res" = 0 ] && echo OK
++ '[' 0 = 0 ']'
++ echo OK
+OK
+exit $res
++ exit 0
+```
+</div></details>
 
 # 必要なソフトウェア
 * Pyton

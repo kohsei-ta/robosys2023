@@ -20,7 +20,7 @@ $ ls
 LICENSE  README.md  plus  test.bash  yamada.bash
 ```
 
-# 実行権限の確認と付与
+## 実行権限の確認と付与
 
 * 実行権限の確認
 ```
@@ -32,7 +32,7 @@ total 36
 -rwxr-xr--  1 takaoka takaoka  667 Nov 28 15:31 plus
 -rwxr-xr--  1 takaoka takaoka  585 Nov 29 02:29 test.bash
 ```
-`-rwxr-xr--`となっているため、このままでは実行できない.
+`-rwxr-xr-x`となっているため、このままでは実行できない.
 
 * 実行権限の付与
 ```

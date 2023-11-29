@@ -7,6 +7,8 @@
 ## インストール方法
 
 * クローン
+
+リポジトリをコピーしたい任意のディレクトリで操作していく.
 ```
 $ git clone https://github.com/kohsei-ta/robosys2023.git 
 ```
@@ -17,8 +19,9 @@ $ cd robosys2023
 $ ls
 ```
 ```
-LICENSE  README.md  plus  test.bash  yamada.bash
+LICENSE  README.md  plus  test.bash
 ```
+上記のようになればインストール完了.
 
 ## 実行権限の確認と付与
 
@@ -72,7 +75,10 @@ $ seq 5 | ./plus
 [1, 2, 3, 4, 5] = 0.0083333333
 ```
 
-## 動作確認
+## test.bashコマンドによる動作確認
+* test.bashコマンド
+
+出力を変数に格納し、正解と比較し動作を確認する.
 * 実行方法
 ```
 $ ./test.bash

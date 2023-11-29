@@ -51,6 +51,7 @@ $ seq 5 | ./plus
 ```
 $ ./test.bash
 ```
+
 <details><summary>`./test.bash`の結果</summary><div>
 
 ```
